@@ -54,7 +54,10 @@ public class Task1Tests {
         titlesList.add("Saudis warned of jail time for posting rumours");
         titlesList.add("'World's most valuable house' - which no one wanted to buy");
         titlesList.add("AT&T agrees another 5G delay at US airports");
-        List<String> textsElements = elements.stream().map(WebElement::getText).collect(Collectors.toList());
+        List<String> textsElements = elements
+                .stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
         assertTrue(textsElements.containsAll(titlesList));
     }
 
