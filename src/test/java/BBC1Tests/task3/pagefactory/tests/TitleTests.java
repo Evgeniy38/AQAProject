@@ -1,10 +1,12 @@
-package BBC1Tests.task3.pageobject.tests;
+package BBC1Tests.task3.pagefactory.tests;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import static org.testng.Assert.assertTrue;
 
 public class TitleTests extends BaseTest {

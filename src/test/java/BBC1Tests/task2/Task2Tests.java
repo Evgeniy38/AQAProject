@@ -47,7 +47,7 @@ public class Task2Tests {
     }
 
     @Test
-    public void testCheckIsEmptyName() {
+    public void testCheckIsEmptyNameField() {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//li[@class='orb-nav-newsdotcom']")).click();
         driver.findElement(By.xpath("//a[@class = 'nw-o-link']/ span[text() = 'Coronavirus']")).click();

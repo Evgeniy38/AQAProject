@@ -1,5 +1,8 @@
 package BBC1Tests.task3.pagefactory.tests;
 
+import BBC1.pageobject.pages.HomePage;
+import BBC1.pageobject.pages.NewsPage;
+import BBC1.pageobject.pages.YourCoronavirusStoriesPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -30,4 +33,19 @@ public class BaseTest {
         driver.close();
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+    public HomePage getHomePage() {
+        return new HomePage(getDriver());
+    }
+
+    public NewsPage getNewsPage() {
+        return new NewsPage(getDriver());
+    }
+
+    public YourCoronavirusStoriesPage getYourCoronavirusStoriesPage() {
+        return new YourCoronavirusStoriesPage(getDriver());
+    }
 }
